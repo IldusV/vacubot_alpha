@@ -1,0 +1,37 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/ws/install/pendulum_msgs/include/**",
+        "/home/ws/install/logging_demo/include/**",
+        "/home/ws/install/intra_process_demo/include/**",
+        "/home/ws/install/image_tools/include/**",
+        "/home/ws/install/action_tutorials_interfaces/include/**",
+        "/opt/ros/jazzy/include/**",
+        "/home/ws/demos/action_tutorials/action_tutorials_cpp/include/**",
+        "/home/ws/demos/composition/include/**",
+        "/home/ws/demos/demo_nodes_cpp/include/**",
+        "/home/ws/demos/demo_nodes_cpp_native/include/**",
+        "/home/ws/demos/image_tools/include/**",
+        "/home/ws/demos/intra_process_demo/include/**",
+        "/home/ws/demos/logging_demo/include/**",
+        "/home/ws/demos/pendulum_control/include/**",
+        "/home/ws/demos/quality_of_service_demo/rclcpp/include/**",
+        "/home/ws/demos/topic_statistics_demo/include/**",
+        "/home/ws/my_package/include/**",
+        "/home/ws/src/vacuum_bot/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

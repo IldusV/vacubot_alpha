@@ -1,0 +1,35 @@
+{
+    "cmake.sourceDirectory": "/home/ws/demos/pendulum_control",
+    "python.autoComplete.extraPaths": [
+        "/home/ws/build/topic_monitor",
+        "/home/ws/install/topic_monitor/lib/python3.12/site-packages",
+        "/home/ws/build/quality_of_service_demo_py",
+        "/home/ws/install/quality_of_service_demo_py/lib/python3.12/site-packages",
+        "/home/ws/install/pendulum_msgs/lib/python3.12/site-packages",
+        "/home/ws/install/logging_demo/lib/python3.12/site-packages",
+        "/home/ws/build/lifecycle_py",
+        "/home/ws/install/lifecycle_py/lib/python3.12/site-packages",
+        "/home/ws/build/demo_nodes_py",
+        "/home/ws/install/demo_nodes_py/lib/python3.12/site-packages",
+        "/home/ws/build/action_tutorials_py",
+        "/home/ws/install/action_tutorials_py/lib/python3.12/site-packages",
+        "/home/ws/install/action_tutorials_interfaces/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/ws/build/topic_monitor",
+        "/home/ws/install/topic_monitor/lib/python3.12/site-packages",
+        "/home/ws/build/quality_of_service_demo_py",
+        "/home/ws/install/quality_of_service_demo_py/lib/python3.12/site-packages",
+        "/home/ws/install/pendulum_msgs/lib/python3.12/site-packages",
+        "/home/ws/install/logging_demo/lib/python3.12/site-packages",
+        "/home/ws/build/lifecycle_py",
+        "/home/ws/install/lifecycle_py/lib/python3.12/site-packages",
+        "/home/ws/build/demo_nodes_py",
+        "/home/ws/install/demo_nodes_py/lib/python3.12/site-packages",
+        "/home/ws/build/action_tutorials_py",
+        "/home/ws/install/action_tutorials_py/lib/python3.12/site-packages",
+        "/home/ws/install/action_tutorials_interfaces/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ]
+}
