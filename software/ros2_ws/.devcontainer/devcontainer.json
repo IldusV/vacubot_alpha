@@ -4,8 +4,11 @@
     "remoteUser": "ildus",
     "build": {
         "dockerfile": "Dockerfile",
-        "args": {
+        "args": {  
             "USERNAME": "ildus"
+        },
+        "build": {
+            "context": ".."  // or whatever level includes both `.devcontainer/` and `utils/`
         }
     },
     "workspaceFolder": "/home/ws",
@@ -31,6 +34,7 @@
         "--net=host",
         "--pid=host",
         "--ipc=host",
+        "--group-add=input",
         "-e", "DISPLAY=${env:DISPLAY}"
     ],
     "mounts": [

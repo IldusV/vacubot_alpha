@@ -50,7 +50,7 @@ fi
 
 DATE_PR="\D{%H}${Blink}:${NC_PR}\D{%M}"
 
-export PS1="${Yellow}${HOSTNAME}[\w]${NC_PR}> "
+export PS1="${Yellow}Docker[\w]${NC_PR}> "
 
 #-------------------------------------------------------------
 # Some settings

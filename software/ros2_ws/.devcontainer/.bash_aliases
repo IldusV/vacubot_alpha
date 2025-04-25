@@ -39,6 +39,8 @@ alias sleep='systemctl suspend'
 
 # rpi robot aliases
 alias ccb='colcon build --symlink-install'
+alias teleopkb='ros2 run teleop_twist_keyboard teleop_twist_keyboard'
+alias ros2simu='ros2 launch vacuum_bot launch_sim.launch.py'
 
 #activate virtual environment for pio
 alias pioenv='source ~/.platformio-env/bin/activate'
