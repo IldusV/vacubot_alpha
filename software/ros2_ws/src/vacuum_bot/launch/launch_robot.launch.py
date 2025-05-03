@@ -75,12 +75,26 @@ def generate_launch_description():
             on_start=[joint_broad_spawner],
         )
     )
-
+    
+    rplidar =  Node(
+        package='sllidar_ros2',
+        executable='sllidar_node',
+        name='sllidar_node',
+        parameters=[{'channel_type': 'serial',
+                    'serial_port': '/dev/ttyUSB0', 
+                    'serial_baudrate': 115200, 
+                    'frame_id': 'laser_frame',
+                    'inverted': False, 
+                    'angle_compensate': True}],
+        output='screen'
+        )
+    
     return LaunchDescription([
         rsp,
         joystick,
         twist_mux,
         delayed_controller_manager,
         delayed_diff_drive_spawner,
-        delayed_joint_broad_spawner
+        delayed_joint_broad_spawner,
+        rplidar
     ])
