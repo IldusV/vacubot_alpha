@@ -53,7 +53,7 @@ public:
     return serial_conn_.IsOpen();
   }
 
-
+#include "rclcpp/rclcpp.hpp"
   std::string send_msg(const std::string &msg_to_send, bool print_output = false)
   {
     serial_conn_.FlushIOBuffers(); // Just in case
@@ -72,12 +72,14 @@ public:
 
     if (print_output)
     {
-      std::cout << "Sent: " << msg_to_send << " Recv: " << response << std::endl;
+      // std::cout << "Sent: " << msg_to_send << " Recv: " << response << std::endl;
+      // RCLCPP_INFO(rclcpp::get_logger("DiffDriveArduinoHardware"), "Successfully cleaned up!");
+      RCLCPP_INFO(rclcpp::get_logger("DiffDriveArduinoHardware"), "Sent: %s Recv: %s", msg_to_send.c_str(), response.c_str());
+
     }
 
     return response;
   }
-
 
   void send_empty_msg()
   {
@@ -96,11 +98,12 @@ public:
     val_1 = std::atoi(token_1.c_str());
     val_2 = std::atoi(token_2.c_str());
   }
+
   void set_motor_values(int val_1, int val_2)
   {
     std::stringstream ss;
     ss << "m " << val_1 << " " << val_2 << "\r";
-    send_msg(ss.str());
+    send_msg(ss.str(),  1);
   }
 
   void set_pid_values(int k_p, int k_d, int k_i, int k_o)
