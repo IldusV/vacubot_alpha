@@ -15,6 +15,10 @@ source install/setup.bash
 ros2 launch vacuum_bot launch_sim.launch.py
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ```
+visualize
+```bash
+rviz2 -d /home/ws/src/vacuum_bot/config/drive_bot.rviz
+```
 
 🤖 Run the Robot on Physical Hardware (Raspberry Pi)
 
@@ -37,4 +41,7 @@ ros2 launch vacuum_bot launch_robot.launch.py
 or
 ros2 launch slam_toolbox online_async_launch.py slam_params_file:=/home/ildus/vacubot_alpha/software/ros2_ws/src/vacuum_bot/config/mapper_params_online_async.yaml use_sim_time:=false
 ```
+
+
+
 
