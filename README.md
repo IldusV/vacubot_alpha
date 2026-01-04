@@ -30,7 +30,11 @@ pio run -t upload
 ```bash
 cd software/ros2_ws
 colcon build --symlink-install
+sudo chmod 666 /dev/ttyUSB0
+source /opt/ros/jazzy/setup.bash
 source install/setup.bash
 ros2 launch vacuum_bot launch_robot.launch.py
+or
+ros2 launch slam_toolbox online_async_launch.py slam_params_file:=/home/ildus/vacubot_alpha/software/ros2_ws/src/vacuum_bot/config/mapper_params_online_async.yaml use_sim_time:=false
 ```
 
